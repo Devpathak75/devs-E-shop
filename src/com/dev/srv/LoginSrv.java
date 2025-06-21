@@ -36,7 +36,7 @@ public class LoginSrv extends HttpServlet {
 
 		if (userType.equals("admin")) { // Login as Admin
 
-			if (password.equals("admin") && userName.equals("admin@gmail.com")) {
+			if (password.equals("dev") && userName.equals("dev@gmail.com")) {
 				// valid
 
 				RequestDispatcher rd = request.getRequestDispatcher("adminViewProduct.jsp");
