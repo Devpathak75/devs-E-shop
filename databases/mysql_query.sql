@@ -203,8 +203,8 @@ COMMIT;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `shopping-cart`;
-INSERT INTO `shopping-cart`.`user` (`email`, `name`, `mobile`, `address`, `pincode`, `password`) VALUES ('guest@gmail.com', 'Guest User', 9876543234, 'K.P Road, Gaya, Bihar - India', 879767, 'guest');
-INSERT INTO `shopping-cart`.`user` (`email`, `name`, `mobile`, `address`, `pincode`, `password`) VALUES ('admin@gmail.com', 'Admin User', 9876543459, 'ABC Colony, Newtown, West Bengal', 786890, 'admin');
+INSERT INTO `shopping-cart`.`user` (`email`, `name`, `mobile`, `address`, `pincode`, `password`) VALUES ('guest@gmail.com', 'Guest User', 9876543234, 'panchavati karanja, panchavati, maharashtra - India', 879767, 'guest');
+INSERT INTO `shopping-cart`.`user` (`email`, `name`, `mobile`, `address`, `pincode`, `password`) VALUES ('dev@gmail.com', 'Admin User', 9876543459, '104 tanvi residency, dhikle nagar, nashik', 786890, 'dev');
 
 COMMIT;
 
@@ -214,7 +214,7 @@ COMMIT;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `shopping-cart`;
-INSERT INTO `shopping-cart`.`transactions` (`transid`, `username`, `time`, `amount`) VALUES ('TR10001', 'guest@gmail.com', '2023-04-23 09:26:56', 125999);
+INSERT INTO `shopping-cart`.`transactions` (`transid`, `username`, `time`, `amount`) VALUES ('TR10001', 'dev@gmail.com', '2023-04-23 09:26:56', 125999);
 
 COMMIT;
 
@@ -224,7 +224,7 @@ COMMIT;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `shopping-cart`;
-INSERT INTO `shopping-cart`.`user_demand` (`username`, `prodid`, `quantity`) VALUES ('guest@gmail.com', 'P20230423084144', 3);
+INSERT INTO `shopping-cart`.`user_demand` (`username`, `prodid`, `quantity`) VALUES ('dev@gmail.com', 'P20230423084144', 3);
 
 COMMIT;
 
@@ -234,7 +234,6 @@ COMMIT;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `shopping-cart`;
-INSERT INTO `shopping-cart`.`usercart` (`username`, `prodid`, `quantity`) VALUES ('guest@gmail.com', 'P20230423082243', 2);
+INSERT INTO `shopping-cart`.`usercart` (`username`, `prodid`, `quantity`) VALUES ('dev@gmail.com', 'P20230423082243', 2);
 
 COMMIT;
-
