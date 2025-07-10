@@ -1,105 +1,171 @@
-# Online Shopping E - Shop (E-Commerce Website)
+🛒 Online Shopping E-Shop (E-Commerce Website)
+A Complete E-Commerce Platform for Selling Electronics Online
 
-This is an E-Commerce Website build for selling of any electronics products online.
+📌 About the Project
+The E-Shop is a full-featured e-commerce website built to sell electronic products online. It demonstrates how a real-world online store like Amazon or Flipkart works, both on the customer side and the admin side.
 
-### About 
+Key Features for Users:
 
-In this projects a user can visit the websites, registers and login to the website. They can check all the products available for shopping, filter and search item based on different categories, and then add to cart. They can add multiple item to the cart and also plus or minus the quantity in the cart. Once the cart is updated, the user can proceed to checkout and click the credit card payment details to proceed. Once the payment is success the orders will be placed and users will be able to see the orders details in the orders section along with the shipping status of the product.
+Visit & Browse: Customers can visit the website without logging in to explore products.
 
-The admin also plays an important role for this project as the admin is the one responsible for adding any product to the store, updating the items, removing the item from the store as well as managing the inventory. The admin can see all the product orders placed and also can mark them as shipped or delivered based on the conditions.
+Register & Login: New users can create an account; returning users can log in securely.
 
-One of the best functionality that the projects include is mailing the customers, so once a user registers to the website, they will recieve a mail for the successful registration to the website, and along with that whenever a user orders any product or the product got shipped from the store, then the user will also receive the email for its confirmation.
-Sometimes, if the user tried to add any item which is out of stock, them they will get an email one the item is available again the stock.
+Product Search & Filter: Browse all products and filter them by categories to find exactly what they need.
 
-Note: The payment page is created only for demo purpose and its not fully integrated with any payment gateway. So for now any credit card details will be accepted and the demo orders will be placed.
+Shopping Cart: Add multiple items to the cart, update quantities, or remove items.
 
-## Highlights :--
+Secure Checkout (Demo): Proceed to checkout and enter payment details. (Note: Payment is for demo only — any card details will be accepted.)
 
-### The users will get a mail to their registered mail Id during:-
-- New User Registration
-- Order Successfully Placed
-- The Item was out of stock while exploring but now it got available in the store
-- Successful shipment and delivery of the Item
+Order Tracking: After placing an order, users can view their order details and check the shipping status.
 
-### Technologies used:-
-1. Front-End Development:
-- HTML
-- CSS
-- Javascript
-- BootStrap
+Key Features for Admin:
 
-2. Back-End Development:
-- Java [JDK 8+]
-- JDBC
-- Servlet
-- JSP
+Product Management: Add, update, or remove products from the store.
 
-3. Database:
-- MySql
+Inventory Control: Manage stock levels to ensure availability.
 
-### ================ Software And Tools Required ================
-- : Git 
-- : Java JDK 8+ 
-- : Eclipse EE 
-- : Apache Maven 
-- : Tomcat v8.0+
-- : MySQL Server 
-- : MySQL Workbench
+Order Management: View all orders placed, update shipping status, and mark items as shipped or delivered.
 
-### ================= Dummy Database Initialization =================
-STEP 1: Open MySQL Command Prompt or MySQL Workbench
+Customer Notifications: Keep customers informed through email alerts for registration, orders, and shipping updates.
 
-STEP 2: Login to the administrator user of MySql:
-	 ```mysql -u <username> -p``` (Enter Password if asked)
+✉️ Automated Email Notifications
+One of the standout features is its built-in mailing system:
 
-STEP 3: Copy paste and execute the MySQL Query from the following file:-
-- Run the Sql Query From this file: [databases/mysql_query.sql](./databases/mysql_query.sql)
+✅ Successful user registration confirmation
 
-### ======GENERATING GMAIL APP PASSWORD [For Mailing Functionalities]========
-Step 1: Create a gmail account or login to existing account in any browser
+✅ Order placement confirmation
 
-Step 2 : Go to [https://myaccount.google.com/security](https://myaccount.google.com/security) and check if 2 step verifications is enabled or not, enable it if not enabled
+✅ Product back-in-stock notification
 
-Step 3: Go to [https://myaccount.google.com/apppasswords](https://myaccount.google.com/apppasswords) and enter password if asked
+✅ Shipment and delivery updates
 
-Step 4: In Select an App Section: select Other (custom name) => enter "E - Shop" => Generate
+Note: Never share your generated app password to keep your account secure.
 
-Step 5: After that it will generate 16 digits app password which you need to copy and save for future configurations.
+💻 Technologies Used
+Frontend:
 
-Step 6: Done : Now continue to importing the project. [Don't share the above password generated to anyone]
+HTML
 
-### ========== Importing and Running The Project Through Eclipse EE ==========
+CSS
 
-Step 1: Open Eclipse Enterprise Edition. [Install, if not already installed.]
+JavaScript
 
-Step 2: Click On File > Import > Git > Projects From Git > Clone Uri > Paste The Repository Url as: ```https://github.com/Devpathak75/devs-E-shop.git```> Select master Branch > Next > Next > Finish.
+Bootstrap
 
-Step 3: Go inside ```Java Resources > src > application.properties``` and update the values as below:
-- a) Update value for db.username and db.password according to your installed mysql credentials.
-- b) Update value for mailer.email and mailer.password, with the same email and app password that you generated earlier in above section [ NOTE:Actual gmail password will not work]
+Backend:
 
-Step 4: Right Click on Project > Run as > Maven Build > In the goals field enter "clean install" > apply > run
+Java (JDK 8+)
 
-Step 5: Right Click On Project > Build Path > Configure Build Path > Libraries > Remove and Update Any Libraries if Red Mark Exists > Finish.
+JDBC
 
-Step 6: Right Click on Project > maven > update project > select force update > apply > close
+Servlet
 
-Step 7: Tomcat Configurations:
-- If Tomcat Server is not configured in Eclipse :
-	-  Right Click On Project > Run As > Run On Server > Manually Define a new server > Select server type > select Tomcat v8.0+ > (Select Tomcat V8.0+ Installation Location If Asked) > Next > Add the current project > Finish.
+JSP
 
-- Else If Tomcat Server is already configured in Eclipse:
-	- Right Click On Project > Run As > Run On Server > Select Tomcat Version > Next > Add the project > Finish.
-		<p align='center'>or</p>
-	- You can directly goto server tab, select the tomcat server and use the debug or run button to start the previously ran project
+Database:
 
-Step 8: Check Running The Site At  [http://localhost:8080/shopping-cart/](http://localhost:8080/shopping-cart/)
+MySQL
 
-Step 9:  [To Change the Port, if getting error like 'port already in use'] Open The Server Tab > Double Click On Tomcat Server > Ports > Change The Port Number For Http/1.1 To 8083 > Close And Save. Now Start and you can access the project on [http://localhost:8083/shopping-cart/](http://localhost:8083/shopping-cart/)
+🧰 Software & Tools Required
+Git
 
-Step 10: Default Username And Password For Admin Is "dev@gmail.com" And "dev"
+Java JDK 8+
 
+Eclipse EE (Enterprise Edition)
 
+Apache Maven
 
+Tomcat Server (v8.0+)
 
-Project By Dev Deepak Pathak
+MySQL Server & MySQL Workbench
+
+🗂️ Dummy Database Initialization
+1️⃣ Open MySQL Command Prompt or MySQL Workbench
+2️⃣ Login:
+
+bash
+Copy
+Edit
+mysql -u <username> -p
+3️⃣ Run the SQL Script:
+Execute the queries from databases/mysql_query.sql to initialize your database.
+
+🔑 Setup Mailing Functionality (Gmail App Password)
+Sign in or create a Gmail account.
+
+Visit Google Account Security and enable 2-Step Verification.
+
+Go to App Passwords and verify your account.
+
+Choose Other (Custom Name) → Enter E-Shop → Click Generate.
+
+Copy the 16-digit app password and keep it safe for configuration.
+
+Use this password (not your actual Gmail password) in your project settings.
+
+⚙️ Importing & Running the Project in Eclipse EE
+1️⃣ Open Eclipse Enterprise Edition (install if you don’t have it).
+2️⃣ Import Project:
+
+File → Import → Git → Projects from Git → Clone URI
+
+Paste: https://github.com/Devpathak75/devs-E-shop.git
+
+Select the master branch → Next → Finish
+
+3️⃣ Configure Application Properties:
+
+Go to Java Resources > src > application.properties
+
+Set:
+
+db.username & db.password → your MySQL credentials
+
+mailer.email & mailer.password → your Gmail & generated app password
+
+4️⃣ Build the Project:
+
+Right-click the project → Run As → Maven Build
+
+Enter clean install in goals → Apply → Run
+
+5️⃣ Fix Build Path (if needed):
+
+Right-click the project → Build Path → Configure Build Path → Libraries
+
+Remove/update any red-marked libraries → Finish
+
+6️⃣ Update Project:
+
+Right-click → Maven → Update Project → Select Force Update → Apply → Close
+
+7️⃣ Configure Tomcat Server:
+
+If not configured:
+
+Right-click the project → Run As → Run on Server → Define New Server → Select Tomcat v8.0+ → Add Project → Finish
+
+If already configured:
+
+Right-click → Run As → Run on Server → Select Tomcat Version → Next → Add Project → Finish
+
+Or use the Servers tab to start/stop/debug your server.
+
+8️⃣ Run Your Site:
+
+Visit: http://localhost:8080/shopping-cart/
+
+9️⃣ If Port Conflict:
+
+Go to Server tab → Double-click Tomcat → Ports → Change HTTP/1.1 to 8083 → Save → Restart
+
+Access: http://localhost:8083/shopping-cart/
+
+🔐 Default Admin Login:
+
+Username: dev@gmail.com
+
+Password: dev
+
+✨ Developed by:
+Dev Deepak Pathak
