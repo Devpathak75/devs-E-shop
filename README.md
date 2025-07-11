@@ -88,7 +88,9 @@ Copy
 Edit
 mysql -u <username> -p
 3️⃣ Run the SQL Script:
-Execute the queries from databases/mysql_query.sql to initialize your database.
+Execute the queries from databases to initialize your database.
+Copy paste and execute the MySQL Query from the following file:-
+Run the Sql Query From this file: [databases/mysql_query.sql](./databases/mysql_query.sql)
 
 🔑 Setup Mailing Functionality (Gmail App Password)
 Sign in or create a Gmail account.
