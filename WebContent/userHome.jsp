@@ -49,8 +49,6 @@
 	}
 	%>
 
-
-
 	<jsp:include page="header.jsp" />
 
 	<div class="text-center"
@@ -117,8 +115,58 @@
 	</div>
 	<!-- ENd of Product Items List -->
 
+<!-- Chatbot section -->
+<div id="chatbot" style="width:100%;max-width:600px;margin:30px auto;border:1px solid #ccc;background:#fff;z-index:1;padding:10px;border-radius:10px;box-shadow:0 0 10px rgba(0,0,0,0.1);">
+  <h4 style="margin-top:0;">Need Help?</h4>
+  <div id="chatlog" style="height:280px;overflow:auto;border:1px solid #ddd;padding:5px;margin-bottom:5px;font-size:14px;"></div>
+  <input type="text" id="chatInput" placeholder="Ask something..." style="width:75%;padding:5px;" />
+  <button onclick="sendChat()" style="width:20%;padding:5px;">Send</button>
+</div>
+
+<script>
+  function sendChat() {
+    const input = document.getElementById("chatInput");
+    const log = document.getElementById("chatlog");
+    const msg = input.value.trim();
+    if (!msg) return;
+
+    log.innerHTML += "<div><b>User:</b> " + msg + "</div>";
+
+    let reply = "I'm here to assist!";
+    const q = msg.toLowerCase();
+
+    if (q.includes("price")) reply = "Prices are shown under each product.";
+    else if (q.includes("hello")) reply = "Hello , How Can I help You Today.";
+    else if (q.includes("Products")) reply = "You Can Check the products above and from category options.";
+    else if (q.includes("recommended")) reply = "You can check the recommended products in category.";
+    else if (q.includes("buy")) reply = "Use 'Add to Cart' or 'Buy Now' to purchase.";
+    else if (q.includes("remove")) reply = "Use 'Remove From Cart' to delete items.";
+    else if (q.includes("checkout")) reply = "Click the 'Checkout' button to place your order.";
+    else if (q.includes("help")) reply = "You can ask me about shopping, cart, or orders.";
+    else if (q.includes("cart")) reply = "View your cart by clicking on the cart icon in the header.";
+    else if (q.includes("offers")) reply = "Currently, all products are listed at discounted prices.";
+    else if (q.includes("discount")) reply = "Special discounts are shown on the product card.";
+    else if (q.includes("contact")) reply = "You can reach support at pdev7169@gmail.com.";
+    else if (q.includes("login")) reply = "Already logged in! You’re in your dashboard now.";
+    else if (q.includes("register")) reply = "New users can register using the Register option.";
+    else if (q.includes("track")) reply = "Tracking is available after placing your order.";
+    else if (q.includes("order")) reply = "Go to your profile to view past orders.";
+    else if (q.includes("profile")) reply = "Click on the profile icon in the top menu to view or edit your details.";
+    else if (q.includes("payment")) reply = "Payments are handled securely at checkout using various options.";
+    else if (q.includes("thankyou")) reply = "you're welcome .";
+    else if (q.includes("thank you")) reply = "you're welcome .";
+    else if (q.includes("thanks")) reply = "you're welcome .";
+    else if (q.includes("by")) reply = "by by, have a nice day .";
+
+    log.innerHTML += "<div><b>Dev:</b> " + reply + "</div>";
+    input.value = "";
+    log.scrollTop = log.scrollHeight;
+  }
+</script>
 
 	<%@ include file="footer.html"%>
 
 </body>
 </html>
+
+<!-- Dev Deepak Pathak-->
