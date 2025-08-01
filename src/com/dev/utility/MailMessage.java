@@ -7,13 +7,13 @@ public class MailMessage {
 		String recipient = emailId;
 		String subject = "Registration Successful";
 		String htmlTextMessage = "" + "<html>" + "<body>"
-				+ "<h2 style='color:violet;'>Welcome to E-Shop!</h2>" + "Hi " + name + ","
+				+ "<h2 style='color:purple;'>Welcome to E-Shop!</h2>" + "Hi " + name + ","
 				+ "<br><br>Thank you for registering with E-Shop."
 				+ "<br>We’re excited to have you on board. Explore our latest collection of electronic appliances and gadgets."
 				+ "<br>Enjoy discounts of up to 60% on a wide range of electronics. Visit our website and discover amazing deals."
 				+ "<br><br>As a warm welcome, we’re offering you an additional 10% OFF (up to ₹500) on your first purchase."
 				+ "<br>Use the promo code below during checkout to avail this offer."
-				+ "<br><br><b>PROMO CODE:</b> Nashikercoder500"
+				+ "<br><br><b>PROMO CODE:</b> Dev500"
 				+ "<br><br>Thank you for choosing E-Shop. We look forward to serving you!"
 				+ "<br><br>Best regards,<br>E-Shop Team."
 				+ "</body>" + "</html>";
@@ -33,8 +33,8 @@ public class MailMessage {
 				+ "<br/><br/>Your order has been placed successfully and is being processed for shipment."
 				+ "<br/><br/><em>Note: This is a demo project email. No actual transaction has occurred.</em>"
 				+ "<br/><br/>Here are your order details:"
-				+ "<br/><b>Order ID:</b> <span style=\"color:violet; font-weight:bold;\">" + transId + "</span>"
-				+ "<br/><b>Amount Paid:</b> <span style=\"color:violet; font-weight:bold;\">" + transAmount + "</span>"
+				+ "<br/><b>Order ID:</b> <span style=\"color:purple; font-weight:bold;\">" + transId + "</span>"
+				+ "<br/><b>Amount Paid:</b> <span style=\"color:red; font-weight:bold;\">" + transAmount + "</span>"
 				+ "<br/><br/>Thank you for choosing E-Shop. We hope to see you again soon!"
 				+ "<br/><br/>Best regards,<br/><b>E-Shop Team</b>"
 				+ "</p></body></html>";
@@ -53,8 +53,8 @@ public class MailMessage {
 				+ "We’re excited to inform you that your order has been shipped and is on its way to you."
 				+ "<br/><br/><em>Note: This is a demo project email. No actual transaction or shipment has occurred.</em>"
 				+ "<br/><br/>Order Details:"
-				+ "<br/><b>Order ID:</b> <span style=\"color:violet; font-weight:bold;\">" + transId + "</span>"
-				+ "<br/><b>Amount Paid:</b> <span style=\"color:violet; font-weight:bold;\">" + transAmount + "</span>"
+				+ "<br/><b>Order ID:</b> <span style=\"color:purple; font-weight:bold;\">" + transId + "</span>"
+				+ "<br/><b>Amount Paid:</b> <span style=\"color:red; font-weight:bold;\">" + transAmount + "</span>"
 				+ "<br/><br/>Thank you for shopping with E-Shop. We look forward to serving you again!"
 				+ "<br/><br/>Best regards,<br/><b>E-Shop Team</b>"
 				+ "</p></body></html>";
@@ -74,8 +74,8 @@ public class MailMessage {
 				+ "<br/><br/>We’re happy to inform you that the product is now available for purchase!"
 				+ "<br/><br/><em>Note: This is a demo project email. No actual transaction has occurred.</em>"
 				+ "<br/><br/>Product Details:"
-				+ "<br/><b>Product ID:</b> <span style=\"color:violet; font-weight:bold;\">" + prodId + "</span>"
-				+ "<br/><b>Product Name:</b> <span style=\"color:violet; font-weight:bold;\">" + prodName + "</span>"
+				+ "<br/><b>Product ID:</b> <span style=\"color:purple; font-weight:bold;\">" + prodId + "</span>"
+				+ "<br/><b>Product Name:</b> <span style=\"color:red; font-weight:bold;\">" + prodName + "</span>"
 				+ "<br/><br/>Hurry up and place your order before it runs out again!"
 				+ "<br/><br/>Thank you for your interest in E-Shop. We look forward to serving you!"
 				+ "<br/><br/>Best regards,<br/><b>E-Shop Team</b>"
