@@ -27,24 +27,26 @@
 				<img src="logo-left.png" alt="Left Image" class="img-responsive" style="max-height: 300px;">
 			</div>
 			<div class="col-sm-8">
-				<!--Company Header Starting  -->
-				<div style="background-color: #FF69B4; color: white; padding: 5px;">
-					<h2>E-Shop</h2>
-					<h6>The Electronics Shop</h6>
-					<form class="form-inline" action="index.jsp" method="get">
-						<div class="input-group">
-							<input type="text" class="form-control" size="40" name="search"
-								placeholder="Search Items" required>
-							<div class="input-group-btn">
-								<input type="submit" class="btn btn-danger" value="Search" />
-							</div>
-						</div>
-					</form>
-					<p align="center"
-						style="color: blue; font-weight: bold; margin-top: 5px; margin-bottom: 5px;"
-						id="message"></p>
-				</div>
-				<!-- Company Header Ending -->
+				   <!-- 💖 Gradient Header Start -->
+      <div style="background: linear-gradient(to bottom, #1a237e, #3949ab, #5c6bc0, #9fa8da); color: white; padding: 10px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+        <h2>E-Shop</h2>
+        <h6>The Electronics Shop</h6>
+        <form class="form-inline" action="index.jsp" method="get">
+  <div class="input-group" style="box-shadow: 0 2px 6px rgba(0,0,0,0.3); border-radius: 8px;">
+    <input type="text" class="form-control" size="40" name="search"
+           placeholder="Search Items" required
+           style="border: 1px solid #3949ab; border-radius: 8px 0 0 8px; height: 40px; font-size: 15px;">
+    <div class="input-group-btn">
+      <input type="submit" class="btn btn-danger"
+             value="Search"
+             style="border-radius: 0 8px 8px 0; height: 40px; font-size: 15px; background-color: #e53935; border: none;">
+    </div>
+  </div>
+</form>
+
+        <p align="center" style="color: blue; font-weight: bold; margin-top: 5px; margin-bottom: 5px;" id="message"></p>
+      </div>
+      <!-- 💖 Gradient Header End -->
 			</div>
 			<div class="col-sm-2">
 				<img src="logo-right.png" alt="Right Image" class="img-responsive" style="max-height: 600px;">
